@@ -1,0 +1,100 @@
+body{
+	color: #777777;
+	background-image:url("assets/images/background-texture.png");
+	font-family: 'Arial','Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+section{
+	margin-top: 2%;
+}
+
+footer{
+	background-color:#666666;
+	font-size: 10px;
+	font-weight: bold;
+	color: #a4b2b5;
+	padding: 3% 3%;
+}
+
+.rowMargin{
+	margin: 10px 0px 10px 0px;
+}
+
+.contentHeading{
+	font-family: 'Georgia', Times, Times New Roman, serif; 
+	font-weight: bold;
+	color: #4aaaa5;
+	padding: 20px 0px 20px 0px;
+	border-bottom: #cccccc 2px solid;
+}
+
+.topName{
+	background-color: #4aaaa5;
+	font-weight: bold;
+	font-family: 'Georgia', Times, Times New Roman, serif; 
+	font-size: 30px;
+	padding: 20px;
+	height: 100%;
+}
+
+.submitBtnStyling{
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
+
+.portfolioImg{
+	margin: 5px 0px 15px 0px;
+	position: relative;
+}
+
+.myImage{
+	width: 25%;
+}
+
+.profileMargin{
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.imageTitle{
+	background-color: #4aaaa5;
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	top: 70%;
+	z-index: 100;
+	width: 105%;
+	transition: .5s ease;
+	opacity: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+
+/*.middle{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+}*/
+
+.imageOverlay {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.portfolioImg:hover .imageOverlay {
+	opacity: 0.3;
+}
+
+.portfolioImg:hover .imageTitle {
+	opacity: 1;
+}
